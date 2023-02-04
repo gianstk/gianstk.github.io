@@ -300,16 +300,153 @@ footer {
 }
 
 
+.uni-details {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+#suebtrakul-title {
+  font-size: 5em;
+  margin-right: 1em;
+}
 
+#watchara-img {
+  width: 388px;
+  box-shadow: 0 0 0 #fff;
+}
+
+.uni-img {
+  width: 100%;
+}
+
+.uni-text {
+  width: 55%;
+}
+
+.uni-img-box {
+  flex-direction: column;
+  width: 43%;
+}
+
+.app-icon {
+  width: 25%;
+}
+
+.koi-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  margin-top: 2rem;
+}
+
+.goddess-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adsoc-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.square-art-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.square-art-container-reverse {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.art-text {
+  width: 40%; 
+}
 
 
 
 /* MEDIA QUERY */
 @media (max-width: 800px) {
 
+  .koi-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goddess-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .adsoc-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .square-art-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-top: 4em;
+    align-items: center;
+  }
+
+  .square-art-container-reverse {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .art-text {
+    width: 70%
+  }
+
+  #suebtrakul-title {
+    padding-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  #watchara-img {
+    /* width: 300px; */
+    width: 100%;
+    box-shadow: 0 0 0 #fff;
+  }
+
+  .app-icon {
+    width: 60%;
+  }
+
+  /* .uni-img {
+    width: 100%;
+  } */
+
+  .uni-text {
+    width: 100%;
+  }
+
+  .uni-img-box {
+    width: 85%;
+    flex-direction: column;
+  }
+
   .navbar {
-    height: 155px;
+    height: 130px;
     z-index: 1;
   }
 
@@ -340,6 +477,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center !important;
+  }
+
+  .uni-details.flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-self: center;
   }
 
   .project-details.flex {

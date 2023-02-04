@@ -45,7 +45,7 @@
       <section class="helloworld" style="margin-top: 5em;">
         <div style="">
           <div class="flex" style="justify-content: flex-start; align-items: flex-start">
-            <h3 style="font-size: 5em; margin-right: 1em;">
+            <h3 id="suebtrakul-title">
               Suebtrakul
             </h3>
             <div>
@@ -134,7 +134,8 @@
 
               <!-- project detail -->
               <div class="flex project-details reverse">
-                <div style="width: 65%;">
+                <!-- <div style="width: 65%;"> -->
+                <div class="uni-text">
                   <h3>CleanSpace Mask Select</h3>
                   <h4>software engineer | CleanSpace Technology PTY., LTD. | may 2020 - present</h4>
                   <ul class="project-tasks">
@@ -152,7 +153,7 @@
                     <li>adobe xd</li>
                   </ul>
                 </div>
-                <img src="img/cs_ms_icon.png" width="25%" alt="">
+                <img src="img/cs_ms_icon.png" alt="" class="app-icon">
               </div>
 
               <!-- project showcase -->
@@ -180,8 +181,9 @@
 
               <!-- project detail -->
               <div class="flex project-details">
-                <img src="img/cs_smart_icon.png" width="25%" alt="">
-                <div style="width: 65%;">
+                <img src="img/cs_smart_icon.png" class="app-icon">
+                <!-- <div style="width: 65%;"> -->
+                <div class="uni-text">
                   <h3>CleanSpace Smart</h3>
                   <h4>software engineer | CleanSpace Technology PTY., LTD. | may 2020 - present</h4>
                   <ul class="project-tasks">
@@ -256,14 +258,13 @@
 
                   </ul>
                 </div>
-                <img src="img/watchara-logo.png" width="25%" alt="">
+                <img src="img/watchara-logo.png" class="app-icon" >
               </div>
 
               <!-- project showcase -->
               <div class="project-showcase">
                 <div class="project-showcase-left" data-aos="fade-right" style="box-shadow: 0 0 0 #fff">
-                  <!-- <img src="img/watchara-logo.png" alt="" style="box-shadow: 0 0 0 #fff"> -->
-                  <img src="img/watchara-phone.png" alt="" style="width: 388px; box-shadow: 0 0 0 #fff;">
+                  <img src="img/watchara-phone.png" id="watchara-img" alt="">
                 </div>
 
                 <div class="project-showcase-right" data-aos="fade-left" data-aos-duration="1000">
@@ -283,12 +284,11 @@
           <!-- Thesis -->
           <li>
             <div class="project" data-aos="fade-left">
-              <div class="flex project-details"
-                style="flex-direction: row; justify-content: space-between; align-items: flex-start;">
+              <div class="flex uni-details">
 
                 <!-- right content -->
-                <div class="flex" style="flex-direction: column; width: 43%;">
-                  <img src="img/solid-bc-arch.png" alt="" style="width: 100%;">
+                <div class="uni-img-box">
+                  <img src="img/solid-bc-arch.png" alt="" class="uni-img">
                   <ul class="project-tools bold" style="margin-top: 2em; width: 100%;">
                     <li>react.js</li>
                     <li>solidity</li>
@@ -300,7 +300,7 @@
                   </ul>
                 </div>
                 <!-- left content -->
-                <div style="width: 55%;">
+                <div class="uni-text">
                   <h3>Decentralized Storage and Hybrid Access Control</h3>
                   <ul class="project-tasks">
                     <li>Designed and implemented a <b>proof-of-concept</b> of a decentralized software architecture
@@ -322,11 +322,11 @@
           <!-- Mediklin -->
           <li>
             <div class="project" data-aos="fade-left">
-              <div class="flex project-details" style="flex-direction: row; justify-content: space-between;">
+              <div class="flex uni-details">
 
                 <!-- right content -->
-                <div class="flex" style="flex-direction: column; width: 43%;">
-                  <img src="svg/mediklin.svg" alt="" style="width: 100%;">
+                <div class="uni-img-box">
+                  <img src="svg/mediklin.svg" alt="" class="uni-img" >
                   <ul class="project-tools bold" style="margin-top: 2em; width: 100%;">
                     <li>react.js</li>
                     <li>solidity</li>
@@ -338,7 +338,7 @@
                   </ul>
                 </div>
                 <!-- left content -->
-                <div style="width: 55%;">
+                <div class="uni-text">
                   <h3>Mediklin</h3>
                   <ul class="project-tasks">
                     <li><b>Mediklin</b> is a blockchain-based decentralized medical record management system.</li>
@@ -358,7 +358,6 @@
             </div>
           </li>
 
-          {{!-- 5 Classes sentimen model --}}
         </ul>
 
 
@@ -398,11 +397,11 @@
 
 
         <!-- Koi art -->
-        <div class="flex" style="justify-content: space-around; margin-top: 2em;">
+        <div class="koi-container">
           <div class="img-frame" data-aos="fade-right">
             <img src="img/koiWave.png" alt="" class="koi-img">
           </div>
-          <div style="width: 40%" data-aos="fade-left">
+          <div class="art-text" data-aos="fade-left" class="art-text">
             <h3>koi, 2020</h3>
             <p style="text-align: justify;">The design is made for cse (computer science and engineering) society
               competition at the university of new south wales.</p>
@@ -412,9 +411,9 @@
         </div>
 
         <!-- CSS goddess -->
-        <div class="flex" style="justify-content: space-around;">
-          <div style="width: 50%" data-aos="fade-right">
-            <h3>birth of css, 2020</h3>
+        <div class="goddess-container">
+          <div class="art-text" data-aos="fade-right">
+            <h3 style="margin-top: 2rem;">birth of css, 2020</h3>
             <p style="text-align: justify;">this work is mainly inspired by one of the most iconic painting from
               renaissance time, 'birth of venus'</p>
             <p style="text-align: justify;">if a tool in software world could become a person, Venus seems to be the
@@ -424,21 +423,21 @@
         </div>
 
         <!-- Adsoc art -->
-        <div class="flex" style="justify-content: space-around; margin-top: 0em;">
+        <div class="adsoc-container">
           <div class="img-frame" data-aos="fade-right">
             <img src="img/adsoc.png" alt="" class="adsoc-img">
           </div>
           <div style="width: 50%" data-aos="fade-left">
-            <h3>adsoc banner, 2020</h3>
+            <h3 style="margin-top: 2rem;">adsoc banner, 2020</h3>
             <p style="text-align: justify;">With a problem of making an adventurous feeling but not dangerous, a calm
               feeling but not lonely mood, eventually gradient shade on snowy mountain seems to be the answer.</p>
           </div>
         </div>
 
         <!-- Tutor art -->
-        <div class="flex" style="justify-content: space-around; margin-top: 2em;">
+        <div class="square-art-container">
 
-          <div style="width: 40%" data-aos="fade-right">
+          <div class="art-text" data-aos="fade-right">
             <h3>tutor element, 2020</h3>
             <p style="text-align: justify;">what is the maening of teaching or tutoring? this is the first question
               received for this work.</p>
@@ -452,11 +451,11 @@
 
 
         <!-- Thai Yuk -->
-        <div class="yuk-sydney flex" style="justify-content: space-around;">
+        <div class="square-art-container-reverse">
           <img class="yuk-img" src="img/yuk.png" alt="" style="width: 45%;" data-aos="fade-right">
 
-          <div style="width: 40%" data-aos="fade-left">
-            <h3>thai titan in sydney, 2019</h3>
+          <div class="art-text" data-aos="fade-left">
+            <h3 style="margin-top: 2rem;">thai titan in sydney, 2019</h3>
             <p style="text-align: justify;">everytime when i went pass opera house, the complexity of its shape always
               remind me of south-east asian tradition arts (sharp, curl, complex).</p>
             <p style="text-align: justify;">this inspired me to work on this thing, to combine the iconic symbol of
@@ -485,14 +484,6 @@
             <p>we should not let our laptop empty... put the sticker on!</p>
           </div>
         </div>
-
-
-
-
-
-
-
-
       </section>
 
 
